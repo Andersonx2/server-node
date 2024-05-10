@@ -1,0 +1,37 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+ "title": "Jogo BAVI",
+ "details": "Amistoso",
+ "maximumAttendeaes": 29168,
+ "slug": "ba-vi"
+} 
+
+###Partida cadastrada
+GET  http://localhost:3333/events/2ae01c98-1ad0-4b5e-98be-ca81fe532356
+
+
+
+
+###Cadastro do torcedor 
+POST http://localhost:3333/events/2ae01c98-1ad0-4b5e-98be-ca81fe532356/attendaes
+Content-Type: application/json
+
+{ 
+ "name": "joao",
+ "email": "joao@gmail.com"
+}
+###Get do torcedor
+
+GET  http://localhost:3333/attendaes/10/badge
+
+###
+GET  http://localhost:3333/attendaes/10/check-in 
+###
+
+
+GET  http://localhost:3333/events/2ae01c98-1ad0-4b5e-98be-ca81fe532356/attendees?
+
+###
+GET  http://localhost:3333/events/2ae01c98-1ad0-4b5e-98be-ca81fe532356/attendees?query=maria
